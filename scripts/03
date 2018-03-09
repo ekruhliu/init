@@ -1,1 +1,2 @@
-ls -lS folder_name
+#!/bin/bash
+ls -lS $1

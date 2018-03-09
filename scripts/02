@@ -1,3 +1,4 @@
-touch file
-crontab file
-echo "0 4 * * * root apt-get update && apt-get upgrade sudo >> /var/log/update_script.log" >> file
+#!/bin/bash
+# sudo -i
+# crontab -e
+echo "0 4 * * 1 apt-get update -y  » /var/log/update_script.log && apt-get upgrade -y » /var/log/update_script.log" >> /var/spool/cron/crontabs/root

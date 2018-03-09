@@ -1,0 +1,6 @@
+#!/bin/bash
+crontab_changed=`/usr/bin/find /etc/ -name crontab -mtime -1`
+if[ -n "$crontab_changed" ]
+then
+echo "crontab file has been changed during last 24!" | mail -s 'crontab file changed' root@localhost
+fi

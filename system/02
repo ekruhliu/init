@@ -1,1 +1,2 @@
-sudo hostname newname
+#!/bin/bash
+sudo hostname $1

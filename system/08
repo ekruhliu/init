@@ -1,0 +1,4 @@
+#!/bin/bash
+ssh-keygen -t rsa
+# Private - /home/user/.ssh/id_rsa
+# Public - /home/user/.ssh/id_rsa.pub
